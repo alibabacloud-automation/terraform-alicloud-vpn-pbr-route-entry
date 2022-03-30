@@ -52,7 +52,7 @@ Created and maintained by Alibaba Cloud Terraform Team(terraform@alibabacloud.co
 
 License
 ----
-Apache 2 Licensed. See LICENSE for full details.
+MIT Licensed. See LICENSE for full details.
 
 Reference
 ---------
