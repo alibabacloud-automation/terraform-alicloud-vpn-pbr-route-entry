@@ -1,30 +1,26 @@
-Terraform module which creates PBR route for vpn gateway on Alibaba Cloud.
-
 terraform-alicloud-vpn-pbr-route-entry
 =====================================================================
 
-English | [简体中文](https://github.com/terraform-alicloud-modules/terraform-alicloud-vpn-pbr-route-entry/blob/master/README-CN.md)
+本 Module 用于在阿里云为VPN网关创建[策略路由(PBR)](https://www.alibabacloud.com/help/zh/doc-detail/127248.html)
 
-Terraform module which creates PBR route for vpn gateway on Alibaba Cloud.
+本 Module 支持创建以下资源:
 
-These types of resources are supported:
+* [策略路由(Vpn_Pbr_Route_Entry)](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/vpn_pbr_route_entry)
 
-* [Vpn_Pbr_Route_Entry](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/vpn_pbr_route_entry)
-
-## Requirements
+## 版本要求
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | > = 0.13.0 |
-| <a name="requirement_alicloud"></a> [alicloud](#requirement\_alicloud) | > = 1.131.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.0 |
+| <a name="requirement_alicloud"></a> [alicloud](#requirement\_alicloud) | >= 1.131.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | > = 1.131.0 |
+| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | >= 1.131.0 |
 
-## Usage
+## 用法
 
 ```hcl
 module "example" {
@@ -39,24 +35,22 @@ module "example" {
 }
 ```
 
-Submit Issues
--------------
-If you have any problems when using this module, please opening
-a [provider issue](https://github.com/aliyun/terraform-provider-alicloud/issues/new) and let us know.
+提交问题
+------
+如果在使用该 Terraform Module 的过程中有任何问题，可以直接创建一个 [Provider Issue](https://github.com/aliyun/terraform-provider-alicloud/issues/new)，我们将根据问题描述提供解决方案。
 
-**Note:** There does not recommend to open an issue on this repo.
+**注意:** 不建议在该 Module 仓库中直接提交 Issue。
 
-Authors
+作者
 -------
 Created and maintained by Alibaba Cloud Terraform Team(terraform@alibabacloud.com)
 
-License
+许可
 ----
 Apache 2 Licensed. See LICENSE for full details.
 
-Reference
+参考
 ---------
-
 * [Terraform-Provider-Alicloud Github](https://github.com/aliyun/terraform-provider-alicloud)
 * [Terraform-Provider-Alicloud Release](https://releases.hashicorp.com/terraform-provider-alicloud/)
 * [Terraform-Provider-Alicloud Docs](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs)
