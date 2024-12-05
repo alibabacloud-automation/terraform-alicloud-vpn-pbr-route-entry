@@ -1,4 +1,4 @@
-resource alicloud_vpn_pbr_route_entry vpn_pbr_route_entry {
+resource "alicloud_vpn_pbr_route_entry" "vpn_pbr_route_entry" {
   count          = var.create_pbr_route_entry ? 1 : 0
   vpn_gateway_id = var.vpn_gateway_id
   route_source   = var.route_source
